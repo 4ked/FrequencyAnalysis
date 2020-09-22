@@ -20,7 +20,7 @@ public class Project1 {
 		
 		Scanner sc;
 		try {
-			sc = new Scanner(new File("tom-sawyer.txt"));
+			sc = new Scanner(new File("./books/tom-sawyer.txt"));
 			ArrayList<String> fileLines = new ArrayList<String>();
 			while(sc.hasNextLine()){
 			    fileLines.add(sc.nextLine());
@@ -73,7 +73,7 @@ public class Project1 {
 			WordStopListMap.process();
 			frequencyAnalysis.topTenWordsStop();
 			
-			System.out.println("(Wildcard) Number of middle apostraphe's: " + count);
+			System.out.println("(Just for fun) Number of middle apostraphe's: " + count);
 		} catch (FileNotFoundException e) {
 			System.out.println("Sorry, the provided book file could not be found: " + e);
 		}
